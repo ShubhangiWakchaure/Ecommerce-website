@@ -1,0 +1,124 @@
+.offers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg ,#fde1ff,#e1ffea22 60%);
+  padding: 40px 5%;
+  border-radius: 20px;
+  margin: 60px auto;
+  color:black;
+  max-width: 1200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.offers:hover {
+  transform: scale(1.02);
+}
+
+/* Left Side */
+.offers-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.offers-left h1 {
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.offers-left p {
+  font-size: 16px;
+  color: #020202;
+  font-weight: 500;
+}
+
+.offers-left button {
+  width: 180px;
+  padding: 12px 20px;
+  margin-top: 15px;
+  background: white;
+  color: #ff4b8f;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.offers-left button:hover {
+  background: #ff4b8f;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Right Side */
+.offers-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers-right img {
+  max-width: 350px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.offers-right img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .offers {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .offers-left {
+    align-items: center;
+  }
+
+  .offers-left h1 {
+    font-size: 32px;
+  }
+
+  .offers-right img {
+    max-width: 280px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .offers {
+    padding: 30px 4%;
+  }
+
+  .offers-left h1 {
+    font-size: 26px;
+  }
+
+  .offers-left p {
+    font-size: 14px;
+  }
+
+  .offers-left button {
+    width: 150px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .offers-right img {
+    max-width: 220px;
+  }
+}

@@ -1,0 +1,107 @@
+.newsletter {
+  width: 100%;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for overall card */
+.newsletter:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styles */
+.newsletter h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Subheading styles */
+.newsletter p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Input + Button container */
+.newsletter div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Email input box */
+.newsletter input {
+  padding: 12px 15px;
+  width: 320px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.newsletter input:focus {
+  border-color: #ff4c3b;
+  box-shadow: 0 0 6px rgba(255, 76, 59, 0.4);
+}
+
+/* Subscribe button */
+.newsletter button {
+  padding: 12px 24px;
+  background-color: #ff4c3b;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.newsletter button:hover {
+  background-color: #e23d2e;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 76, 59, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .newsletter {
+    padding: 25px 15px;
+  }
+
+  .newsletter h1 {
+    font-size: 22px;
+  }
+
+  .newsletter input {
+    width: 100%;
+  }
+
+  .newsletter div {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+}

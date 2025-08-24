@@ -1,0 +1,53 @@
+/* RelatedProducts.css */
+
+.relatedproducts {
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 20px;
+  }
+  
+  .relatedproducts h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Darker color for the title */
+    margin-bottom: 10px;
+    text-align: center; /* Center align the title */
+  }
+  
+  .relatedproducts hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd; /* Light line separator */
+    margin: 10px 0 20px 0; /* Space around the line */
+  }
+  
+  .relatedproducts-items {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items within the container */
+  }
+  
+  .relatedproducts-items .item {
+    flex: 1 1 calc(25% - 20px); /* Make items responsive, adjust width */
+    max-width: 300px;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center; /* Center align item content */
+    border: 1px solid #ddd; /* Light border for individual items */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each item */
+    padding: 10px;
+    background-color: #fff; /* White background for items */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+  }
+  
+  .relatedproducts-items .item:hover {
+    transform: translateY(-5px); /* Lift item slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  

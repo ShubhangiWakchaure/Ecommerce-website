@@ -1,0 +1,49 @@
+/* DescriptionBox.css */
+
+.descriptionbox {
+    width: 100%;
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px;
+    margin-top: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .descriptionbox-navigator {
+    display: flex;
+    gap: 12px; /* Space between navigation items */
+    margin-bottom: 16px; /* Space below navigator */
+  }
+  
+  .descriptionbox-nav-box {
+    font-size: 16px;
+    font-weight: 600; /* Bold text */
+    color: #333; /* Dark text */
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+  }
+  
+  .descriptionbox-nav-box:hover {
+    background-color: #007bff; /* Highlight on hover */
+    color: #fff; /* White text on hover */
+  }
+  
+  .descriptionbox-nav-box.fade {
+    color: #777; /* Faded text for inactive tab */
+  }
+  
+  .descriptionbox-description {
+    font-size: 14px;
+    line-height: 1.6; /* Improved readability */
+    color: #555; /* Medium text color */
+  }
+  
+  .descriptionbox-description p {
+    margin-bottom: 12px; /* Space between paragraphs */
+  }
+  

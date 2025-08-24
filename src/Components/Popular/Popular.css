@@ -1,0 +1,28 @@
+/* Popular.css */
+.popular {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for the section */
+    text-align: center;
+  }
+  
+  .popular h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .popular hr {
+    width: 200px;
+    height: 6px;
+    background-color: #ff6347; /* Tomato color for emphasis */
+    border: none;
+    margin: 10px auto 30px auto;
+  }
+  
+  .popular-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
